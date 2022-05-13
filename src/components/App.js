@@ -1,18 +1,20 @@
 import React from 'react';
-import Game from './Game';
+import Game from './Game/Game';
 import Init from './init/Init';
 import '../css/reset.css';
 import '../css/styles.css';
 
-export default function App(){
+export default function App() {
 
-    const [tela, setTela] = React.useState('False');
-    
-   
+    const [tela, setTela] = React.useState('Init');
 
-    return(
-        <div>
-            <Init />
-        </div>
+    function MudandoTela(filhoMandou) {
+        setTela(filhoMandou);
+    }
+
+    return (
+        <>
+            {tela === 'Init' ? <Init MudandoTela={MudandoTela} /> : <Game MudandoTela={MudandoTela} />}
+        </>
     );
 }
