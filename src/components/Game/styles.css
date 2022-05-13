@@ -67,13 +67,13 @@ body{
     cursor: pointer;
     font-weight: bold;
     font-size: 26px;
-    transition: 0.2s linear;
+    transition: 0.1s linear;
 }
 ion-icon:hover{
     font-size: 28px;
 }
 
-.questions, .iniciou > h5{
+.questions, .cardPergunta > h5{
     font-family: 'Recursive';
     font-size: 16px;
 }
@@ -82,11 +82,101 @@ ion-icon:hover{
     box-shadow: 0px 0px 10px rgba(0,0,0, 0.6);
 }
 
-.iniciou{
+.cardPergunta{
     background-color: #FFFFD4;
     width: 300px;
     height: 130px;
     border-radius: 5px;
     padding: 20px;
     margin-top: 15px;
+
+    display: flex;
+    flex-wrap: wrap-reverse;
+    position: relative;
+}
+
+.cardPergunta > ion-icon{
+    position: absolute;
+    font-size: 26px;
+    right: 20px;
+    bottom: 15px;
+    transition: 0.1s linear;
+
+}
+
+.cardPergunta > ion-icon:hover{
+    font-size: 28px;
+}
+.botoes{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+
+    bottom: 15px;
+    width: 100%;
+}
+.noLembro {
+    width: 80px;
+    height: 35px;
+    background-color: #FF3030;
+    border: 1px solid #FF3030;
+
+    border-radius: 5px;
+    font-family: 'Recursive';
+    font-size: 12px;
+    color: white;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    margin-right: 10px;
+
+}
+.noLembro:hover{
+    cursor: pointer;  filter: brightness(1.08);
+    box-shadow: 0px 0px 10px rgba(0,0,0, 0.3);
+}
+
+.quaseLembrei {
+    width: 80px;
+    height: 35px;
+    background-color: #FF922E;
+    border: 1px solid #FF922E;
+    border-radius: 5px;
+    font-family: 'Recursive';
+    font-size: 12px;
+    color: white;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    margin-right: 10px;
+}
+.quaseLembrei:hover{
+    cursor: pointer;
+    filter: brightness(1.08);
+    box-shadow: 0px 0px 10px rgba(0,0,0, 0.3);
+}
+
+.zap{
+    
+    height: 35px;
+    background-color: #2FBE34;
+    border-radius: 5px;
+    font-family: 'Recursive';
+    font-size: 12px;
+    color: white;
+
+    border: 1px solid #2FBE34;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-right: 10px;
+}
+.zap:hover{
+    filter: brightness(1.08);
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0,0,0, 0.3);
 }
