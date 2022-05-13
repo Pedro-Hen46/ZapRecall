@@ -1,8 +1,12 @@
-export default function GameContent({flipcar}){
-    console.log(flipcar);
-    return(
+import GameQuestions from "./GameQuestions"
+
+
+export default function GameContent({ deck }) {
+
+
+    return (
         <>
-            <h4>Eu sou o elemento {flipcar}</h4>
+            {deck.map((elemento, index) => <GameQuestions elemento={elemento} index={index} key={index} deck={deck} />)}
         </>
     )
 }

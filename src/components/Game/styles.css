@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700;800;900&family=Righteous&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.root{
+    margin-bottom: 50px;
+}
+
 .header{
     width: 100%;
     display: flex;
@@ -7,11 +20,13 @@
     align-items: center;
 }
 
-h4{
+.footer > h4{
     color: #333333;
     font-family: 'Recursive';
     font-size: 18px;
 }
+
+
 .footer{
     width: 100%;
     background-color: white;
@@ -21,7 +36,57 @@ h4{
     align-items: center;
     justify-content: center;
 
-    position: absolute;
+    margin-top: 30px;
+    position: fixed;
     bottom: 0;
     left: 0;
+}
+
+.exit{
+    margin-left: 20px;
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.questions{
+    width: 300px;
+    height: 65px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 15px;
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.questions > ion-icon {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 26px;
+    transition: 0.2s linear;
+}
+ion-icon:hover{
+    font-size: 28px;
+}
+
+.questions, .iniciou > h5{
+    font-family: 'Recursive';
+    font-size: 16px;
+}
+
+.questions:hover{
+    box-shadow: 0px 0px 10px rgba(0,0,0, 0.6);
+}
+
+.iniciou{
+    background-color: #FFFFD4;
+    width: 300px;
+    height: 130px;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 15px;
 }

@@ -34,9 +34,9 @@ export default function Game({ MudandoTela }) {
         <>
             <GameHeader />
             
-            {deck.map((flipcar, key) => <GameContent key={key} flipcar={flipcar}/>)}
+            <GameContent deck={deck} />
             
-            <GameFooter />
+            <GameFooter MudandoTela={MudandoTela} deck={deck} />
         </>
     )
 }
