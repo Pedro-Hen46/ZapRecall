@@ -3,6 +3,10 @@
 * {
     box-sizing: border-box;
 }
+ion-icon{
+    cursor:pointer;
+}
+
 body{
     display: flex;
     justify-content: center;
@@ -33,6 +37,7 @@ body{
     height: 70px;
 
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
@@ -73,7 +78,7 @@ ion-icon:hover{
     font-size: 28px;
 }
 
-.questions, .cardPergunta > h5{
+.questions, .Jogando > h5{
     font-family: 'Recursive';
     font-size: 16px;
 }
@@ -82,7 +87,7 @@ ion-icon:hover{
     box-shadow: 0px 0px 10px rgba(0,0,0, 0.6);
 }
 
-.cardPergunta{
+.Jogando{
     background-color: #FFFFD4;
     width: 300px;
     height: 130px;
@@ -95,7 +100,7 @@ ion-icon:hover{
     position: relative;
 }
 
-.cardPergunta > ion-icon{
+.Jogando > ion-icon{
     position: absolute;
     font-size: 26px;
     right: 20px;
@@ -104,7 +109,7 @@ ion-icon:hover{
 
 }
 
-.cardPergunta > ion-icon:hover{
+.Jogando > ion-icon:hover{
     font-size: 28px;
 }
 .botoes{
@@ -179,4 +184,21 @@ ion-icon:hover{
     filter: brightness(1.08);
     cursor: pointer;
     box-shadow: 0px 0px 10px rgba(0,0,0, 0.3);
+}
+.icones{
+    display: flex;
+    justify-content: center;
+}
+
+.red{
+    font-size: 26px;
+    color: red;
+}
+.orange{
+    font-size: 26px;
+    color: orange;
+}
+.green{
+    font-size: 26px;
+    color: green;
 }

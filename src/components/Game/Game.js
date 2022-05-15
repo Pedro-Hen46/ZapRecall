@@ -4,7 +4,7 @@ import GameFooter from './GameFooter';
 import GameHeader from './GameHeader';
 import './styles.css'
 
-export default function Game({ MudandoTela }) {
+export default function Game() {
 
     const deck = [
         {
@@ -27,6 +27,14 @@ export default function Game({ MudandoTela }) {
             question: 'O ReactDOM nos ajuda __  ?',
             answer: 'interagindo com a DOM para colocar componentes React na mesma',
         },
+        {
+            question: 'Quem é o milhor?',
+            answer: 'O Cristiano Ronaldo ',
+        },
+        {
+            question: 'Qual a melhor linguagem de programação do Mundo ?',
+            answer: 'Ainda não sei, estou tentando descobrir. ',
+        }
     ]
 
  
@@ -35,8 +43,7 @@ export default function Game({ MudandoTela }) {
             <GameHeader />
             
             <GameContent deck={deck} />
-            
-            <GameFooter MudandoTela={MudandoTela} deck={deck} />
+
         </>
     )
 }
