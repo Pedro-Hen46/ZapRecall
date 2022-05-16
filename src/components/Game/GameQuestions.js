@@ -11,9 +11,8 @@ export default function GameQuestions({ index, deck, buttonAnwser, setbuttonAnws
     const [card, setCard] = React.useState('questions');
     const [control, setControl] = React.useState(0);
 
-
+    
     let answer = deck[index].answer;
-
 
     function iniciaGame() {
         const question = deck[index].question;
@@ -38,10 +37,8 @@ export default function GameQuestions({ index, deck, buttonAnwser, setbuttonAnws
         setCard('questions')
         setIcon(icon)
         setColor(color)
-        // console.log(decisao);
-        // decisao === 'errou' ? setControl(control += 1) : '';
-
     }
+
     return (
         <div className={card}>
             <h5 className={color}> {pergunta}</h5>
