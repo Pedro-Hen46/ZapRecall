@@ -1,7 +1,7 @@
 import Party from '../../images/party.png'
 import Sad from '../../images/sad.png'
 
-export default function GameFooter({ buttonAnwser, deck, key, contador }) {
+export default function GameFooter({ buttonAnwser, deck, key, contador, MudandoTela }) {
 
     // console.log(contador);
     let qtdPerguntas = deck.length;
@@ -19,6 +19,9 @@ export default function GameFooter({ buttonAnwser, deck, key, contador }) {
             <div className="icones">
                 {buttonAnwser.map((elemento, index) => <ion-icon key={index} class={elemento.color} name={elemento.icon}></ion-icon>)}
             </div>
+            {/* Iniciando botao para reiniciar o ZapRecall */}
+            {qtdPerguntas === perguntasRespondidas ? <button onClick={() =>
+                confirm('Tem certeza que reiniciar o jogo?') === true ? MudandoTela('Init') : ''} className='reiniciar'>REINICIAR RECALL</button> : ''}
         </div>
 
     )

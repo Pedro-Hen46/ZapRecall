@@ -1,10 +1,9 @@
 import React from 'react'
 import GameContent from './GameContent';
-import GameFooter from './GameFooter';
 import GameHeader from './GameHeader';
 import './styles.css'
 
-export default function Game() {
+export default function Game({MudandoTela}) {
 
     const deck = [
         {
@@ -28,12 +27,12 @@ export default function Game() {
             answer: 'interagindo com a DOM para colocar componentes React na mesma',
         },
         {
-            question: 'Quem é o milhor?',
-            answer: 'O Cristiano Ronaldo ',
+            question: 'O que é uma variavel de estado ?',
+            answer: 'Ele determina o estado do componente, sendo renderizado ou não.',
         },
         {
             question: 'Qual a melhor linguagem de programação do Mundo ?',
-            answer: 'Ainda não sei, estou tentando descobrir. ',
+            answer: 'Com certeza JS, React e stacks Web... ',
         }
     ]
     shuffleArray(deck);
@@ -49,7 +48,7 @@ export default function Game() {
         <>
             <GameHeader />
             
-            <GameContent deck={deck} />
+            <GameContent deck={deck} MudandoTela={MudandoTela}/>
 
         </>
     )
