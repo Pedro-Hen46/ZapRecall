@@ -10,7 +10,7 @@ export default function GameContent({ deck, setIcon, icon, MudandoTela, meta, se
     const [buttonAnwser, setbuttonAnwser] = React.useState([]);
 
     //verificando se o array tem alguma mensagem que ele nao lembrou...
-    buttonAnwser.length === deck.length ? buttonAnwser.filter(elemento => elemento.type === 'fail' ? contador += 1 : elemento.type === 'zap' ? acerteiZap += 1 : '') : '';
+    buttonAnwser.length === deck.length ? buttonAnwser.filter((elemento) => elemento.type === 'fail' ? contador += 1 : elemento.type === 'zap' ? acerteiZap += 1 : '') : ''
     
     return (
         <>
