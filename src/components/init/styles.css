@@ -27,3 +27,14 @@
     box-shadow: 0px 0px 10px rgba(0,0,0, 0.7);
     cursor: pointer;
 }
+
+.inputZap{
+    width: 246px;
+    height: 40px;
+    border: thin solid white;
+    border-radius: 5px;
+}
+.inputZap:hover{
+    box-shadow: 0px 0px 10px rgba(0,0,0, 0.7);
+    cursor: pointer;
+}

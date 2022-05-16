@@ -7,14 +7,15 @@ import '../css/styles.css';
 export default function App() {
 
     const [tela, setTela] = React.useState('Init');
+    const [meta, setMeta] = React.useState();
 
-    function MudandoTela(filhoMandou) {
+    function MudandoTela(filhoMandou, metaZap) {
+        setMeta(metaZap);
         setTela(filhoMandou);
     }
-
     return (
         <>
-            {tela === 'Init' ? <Init MudandoTela={MudandoTela} /> : <Game MudandoTela={MudandoTela} />}
+            {tela === 'Init' ? <Init MudandoTela={MudandoTela} /> : <Game meta={meta} MudandoTela={MudandoTela} />}
         </>
     );
 }

@@ -285,3 +285,10 @@ ion-icon:hover{
     height: 32px;
     box-shadow: 0px 0px 10px rgba(0,0,0, 0.3);
 }
+.MetaEscolhida{
+    color: gray;
+    font-size: 10px;
+    font-family: 'Recursive';
+    position: absolute;
+    bottom: 5px;
+}

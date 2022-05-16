@@ -3,8 +3,8 @@ import GameContent from './GameContent';
 import GameHeader from './GameHeader';
 import './styles.css'
 
-export default function Game({MudandoTela}) {
-
+export default function Game({MudandoTela, meta}) {
+    
     const deck = [
         {
             question: 'O que é JSX ?', 
@@ -31,8 +31,12 @@ export default function Game({MudandoTela}) {
             answer: 'Ele determina o estado do componente, sendo renderizado ou não.',
         },
         {
-            question: 'Qual a melhor linguagem de programação do Mundo ?',
-            answer: 'Com certeza JS, React e stacks Web... ',
+            question: 'Usamos o npm para __',
+            answer: 'gerenciar os pacotes necessários e suas dependências'
+        },
+        {
+            question: 'Usamos props para __',
+            answer: 'passar diferentes informações para componentes'
         }
     ]
     shuffleArray(deck);
@@ -48,7 +52,7 @@ export default function Game({MudandoTela}) {
         <>
             <GameHeader />
             
-            <GameContent deck={deck} MudandoTela={MudandoTela}/>
+            <GameContent deck={deck} meta={meta} MudandoTela={MudandoTela}/>
 
         </>
     )
