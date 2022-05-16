@@ -1,17 +1,18 @@
 import Party from '../../images/party.png'
 import Sad from '../../images/sad.png'
 
-export default function GameFooter({ buttonAnwser, deck, key, control }) {
+export default function GameFooter({ buttonAnwser, deck, key, contador }) {
 
+    // console.log(contador);
     let qtdPerguntas = deck.length;
     let perguntasRespondidas = buttonAnwser.length;
-    const resultado = 0;
+    const resultado = '';
 
     return (
 
         <div className={qtdPerguntas === perguntasRespondidas ? 'mostraResultado' : 'footer'}>
-            {qtdPerguntas === perguntasRespondidas ? <div className='icones'> <img src={ control === 0 ? Party : Sad}/> <h4>{resultado}</h4> 
-            <p><h4>Você não esqueceu de nenhum Flashcard</h4></p> </div> :
+            {qtdPerguntas === perguntasRespondidas ? <div className='tituloResultado'> <img className='imgResultado' src={contador === 0 ? Party : Sad} /> <h4 className='negrito'>{contador === 0 ? 'Parabéns !' : 'Putz...'}</h4>
+                <h4 className='resenha'>{contador === 0 ? 'Você não esqueceu de nenhum Flashcard' : 'Ainda faltam alguns... Mas não desanime!'}</h4> </div> :
                 ''}
 
             <h4>{perguntasRespondidas}/{qtdPerguntas} CONCLUÍDOS</h4>

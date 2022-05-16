@@ -9,7 +9,7 @@ export default function ButtonsAnswer({ buttonAnwser, setbuttonAnwser, respondid
             <h4>{play}</h4>
             <button onClick={() => {
                 setbuttonAnwser([...buttonAnwser, { icon: 'close-circle', color: 'red', type: 'fail' }])
-                respondida('red', 'close-circle', 1);
+                respondida('red', 'close-circle');
             }}
                 className="noLembro">Não lembrei</button>
 

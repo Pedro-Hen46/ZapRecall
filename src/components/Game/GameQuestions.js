@@ -11,7 +11,6 @@ export default function GameQuestions({ index, deck, buttonAnwser, setbuttonAnws
     const [card, setCard] = React.useState('questions');
     const [control, setControl] = React.useState(0);
 
-    let contador = 0;
 
     let answer = deck[index].answer;
 
@@ -33,17 +32,16 @@ export default function GameQuestions({ index, deck, buttonAnwser, setbuttonAnws
     }
 
     //- Devolutiva Visual da resposta terminada.
-    function respondida(color, icon, decisao) {
+    function respondida(color, icon) {
 
         setPergunta('Pergunta ' + (index + 1))
         setCard('questions')
         setIcon(icon)
         setColor(color)
         // console.log(decisao);
-        decisao === 'errou' ? setControl(control += 1) : '';
+        // decisao === 'errou' ? setControl(control += 1) : '';
 
     }
-    console.log(control)
     return (
         <div className={card}>
             <h5 className={color}> {pergunta}</h5>
