@@ -29,7 +29,7 @@ export default function GameQuestions({ index, deck, buttonAnwser, setbuttonAnws
         }
     }
     function buttonBlocked() {
-        alert('Você já respondeu essa pergunta, tente outra...');
+        window.alert('Você já respondeu essa pergunta, tente outra...');
     }
     //- Devolutiva Visual da resposta terminada.
     function respondida(color, icon) {
