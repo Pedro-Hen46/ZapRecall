@@ -3,7 +3,7 @@ import GameFooter from './GameFooter';
 import GameQuestions from "./GameQuestions"
 
 
-export default function GameContent({ deck, setIcon, icon, MudandoTela, meta }) {
+export default function GameContent({ deck, setIcon, icon, MudandoTela, meta, setMeta }) {
 
     let contador = 0;
     let acerteiZap = 0;
@@ -15,7 +15,6 @@ export default function GameContent({ deck, setIcon, icon, MudandoTela, meta }) 
     return (
         <>
             {deck.map((elemento, index) => <GameQuestions elemento={elemento} index={index} key={index} deck={deck} buttonAnwser={buttonAnwser} setbuttonAnwser={setbuttonAnwser} />)}
-
             <GameFooter meta={meta} acerteiZap={acerteiZap} contador={contador} setIcon={setIcon} icon={icon} setbuttonAnwser={setbuttonAnwser} buttonAnwser={buttonAnwser} deck={deck} MudandoTela={MudandoTela} />
         </>
 

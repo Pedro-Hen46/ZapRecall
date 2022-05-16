@@ -25,8 +25,7 @@ export default function GameFooter({ buttonAnwser, deck, key, contador, MudandoT
             {meta === 0 ? '' : qtdPerguntas === perguntasRespondidas ? '' : <h6 className='MetaEscolhida'>Você precisa atingir a meta de <strong>{meta} Zaps!</strong></h6>}
 
             {/* Iniciando botao para reiniciar o ZapRecall */}
-            {qtdPerguntas === perguntasRespondidas ? <button onClick={() =>
-                window.confirm('Tem certeza que reiniciar o Recall?') === true ? MudandoTela('Init') : ''} className='reiniciar'>REINICIAR RECALL</button> : ''}
+            {qtdPerguntas === perguntasRespondidas ? <button onClick={() => window.confirm('Tem certeza que reiniciar o Recall?') === true ? MudandoTela('Init') : ''} className='reiniciar'>REINICIAR RECALL</button> : ''}
         </div>
 
     )
