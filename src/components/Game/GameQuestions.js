@@ -1,33 +1,24 @@
 import React from "react";
 import ButtonsAnswer from "./ButtonsAnswer";
+import imgSwapCard from '../../images/Vector-8.png';
 
-export default function GameQuestions({ index, deck, buttonAnwser, setbuttonAnwser }) {
+export default function GameQuestions({ index, deck, buttonAnwser, setbuttonAnwser}) {
+
     const [play, setPlay] = React.useState(false);
     const [pergunta, setPergunta] = React.useState('Pergunta ' + (index + 1));
     const [icon, setIcon] = React.useState('play-outline');
+    const [color, setColor] = React.useState('');
     const [card, setCard] = React.useState('questions');
+    const [control, setControl] = React.useState(0);
 
-    let color = ''
-    switch (icon) {
-        case 'close-circle':
-        color = 'colorRed'
-        break
-        case 'help-circle':
-        color = 'colorOrange'
-        break
-        case 'checkmark-circle':
-        color = 'colorGreen'
-        break
+    let contador = 0;
 
-        default:
-        color = ''
-  }
+    let answer = deck[index].answer;
 
-    const answer = deck[index].answer;
 
     function iniciaGame() {
         const question = deck[index].question;
-        const answer = deck[index].answer;
+        answer = deck[index].answer;
 
         setPlay(!play);
 
@@ -37,22 +28,35 @@ export default function GameQuestions({ index, deck, buttonAnwser, setbuttonAnws
         } else {
             setPergunta(question)
             setCard('Jogando')
-            setIcon('sync')
+            setIcon(true)
         }
     }
 
+    //- Devolutiva Visual da resposta terminada.
+    function respondida(color, icon, decisao) {
+
+        setPergunta('Pergunta ' + (index + 1))
+        setCard('questions')
+        setIcon(icon)
+        setColor(color)
+        // console.log(decisao);
+        decisao === 'errou' ? setControl(control += 1) : '';
+
+    }
+    console.log(control)
     return (
         <div className={card}>
-            <h5>{pergunta}</h5>
+            <h5 className={color}> {pergunta}</h5>
 
-            {pergunta === answer ? '' :
+            {pergunta === answer ? '' : card !== 'questions' ? <img className='virarCard' src={imgSwapCard} onClick={iniciaGame} /> :
                 <ion-icon
+                    class={color}
                     onClick={iniciaGame}
                     name={icon}>
                 </ion-icon>
             }
 
-            {pergunta === answer ? <ButtonsAnswer buttonAnwser={buttonAnwser} setbuttonAnwser={setbuttonAnwser} /> : ''}
+            {pergunta === answer ? <ButtonsAnswer respondida={respondida} play={play} setPlay={setPlay} buttonAnwser={buttonAnwser} setbuttonAnwser={setbuttonAnwser} /> : ''}
         </div>
     )
 
