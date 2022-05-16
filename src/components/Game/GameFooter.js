@@ -26,7 +26,7 @@ export default function GameFooter({ buttonAnwser, deck, key, contador, MudandoT
 
             {/* Iniciando botao para reiniciar o ZapRecall */}
             {qtdPerguntas === perguntasRespondidas ? <button onClick={() =>
-                confirm('Tem certeza que reiniciar o Recall?') === true ? MudandoTela('Init') : ''} className='reiniciar'>REINICIAR RECALL</button> : ''}
+                window.confirm('Tem certeza que reiniciar o Recall?') === true ? MudandoTela('Init') : ''} className='reiniciar'>REINICIAR RECALL</button> : ''}
         </div>
 
     )
