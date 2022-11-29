@@ -16,7 +16,7 @@ Algumas tecnologias usadas:
 
 <center>
 <div>
-  <img src="./src/images/Inicial.png">
+  <img src="./src/images/Apresentation.gif">
   <h4>Se tiver alguma meta de Zap, adicione e Inicie o recall...</h4>
 </div>
 </center>
