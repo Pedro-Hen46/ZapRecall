@@ -1,5 +1,5 @@
 <img src="./src/images/Inicial.png">
-<center>Relembre conceitos de JavaScript com ZapRecall</center>
+<center><h3>Relembre conceitos de JavaScript com ZapRecall<h3/></center>
 
 ## Tecnologias
 
@@ -17,7 +17,7 @@ Algumas tecnologias usadas:
 <center>
 <div>
   <img src="./src/images/Inicial.png">
-  <h3>Se tiver alguma meta de Zap, adicione e Inicie o recall</h3>
+  <h4>Se tiver alguma meta de Zap, adicione e Inicie o recall</h4>
 </div>
 </center>
 
@@ -26,7 +26,7 @@ Algumas tecnologias usadas:
 <center>
 <div>
   <img src="./src/images/Questions.png">
-  <h3>Responda as perguntas!</h3>
+  <h4>Responda as perguntas!</h4>
 </div>
 </center>
 
@@ -36,7 +36,7 @@ Algumas tecnologias usadas:
 <div>
   <img src="./src/images/Sucesso.png" width="49%" height="auto">
   <img src="./src/images/Falha.png" width="49%" height="auto">
-  <h3>Obtenha seu resultado e trabalhe para sempre estar antenado sobre conceitos de JavaScript.</h3>
+  <h4>Obtenha seu resultado e trabalhe para sempre estar antenado sobre conceitos de JavaScript.</h4>
 </div>
 </center>
 
@@ -47,7 +47,7 @@ Algumas tecnologias usadas:
 
 ## Links
 
-- Deploy Vercel: ***https://track-it-theta.vercel.app/***
+- Deploy Vercel: ***https://zap-recall-lyart.vercel.app/***
 - Repositório: ***https://github.com/Pedro-Hen46/ZapRecall***
 
 ## Autores
