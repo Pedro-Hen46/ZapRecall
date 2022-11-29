@@ -17,7 +17,7 @@ Algumas tecnologias usadas:
 <center>
 <div>
   <img src="./src/images/Inicial.png">
-  <h4>Se tiver alguma meta de Zap, adicione e Inicie o recall</h4>
+  <h4>Se tiver alguma meta de Zap, adicione e Inicie o recall...</h4>
 </div>
 </center>
 
@@ -26,7 +26,7 @@ Algumas tecnologias usadas:
 <center>
 <div>
   <img src="./src/images/Questions.png">
-  <h4>Responda as perguntas!</h4>
+  <h5>Responda as perguntas, Lembre-se não lembrar de alguma resposta acarreta na falha de desempenho, seja o melhor!</h5>
 </div>
 </center>
 
@@ -36,14 +36,16 @@ Algumas tecnologias usadas:
 <div>
   <img src="./src/images/Sucesso.png" width="49%" height="auto">
   <img src="./src/images/Falha.png" width="49%" height="auto">
-  <h4>Obtenha seu resultado e trabalhe para sempre estar antenado sobre conceitos de JavaScript.</h4>
+  <h5>Obtenha seu resultado e trabalhe para sempre estar antenado sobre conceitos de JavaScript.</h5>
 </div>
 </center>
 
 ## Recursos
 
-- Layout Mobile 📱
-- Criar uma conta na Plataforma ✨
+- Layout Responsivo 📱
+- Metas de Acertos ✅
+- FeedBack de desempenho 📈
+
 
 ## Links
 
